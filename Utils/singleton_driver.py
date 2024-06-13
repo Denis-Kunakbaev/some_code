@@ -1,8 +1,9 @@
-from Utils.browser_singleton_meta import BrowserSingletonMeta
+from Utils.singleton_meta import SingletonMeta
 from Utils.browser_factory import WebDriverFactory
 
 
-class BrowserSingleton(metaclass=BrowserSingletonMeta):
+
+class BrowserSingleton(metaclass=SingletonMeta):
     def __init__(self):
         self.driver = WebDriverFactory().get_webdriver()
 
@@ -11,4 +12,4 @@ class BrowserSingleton(metaclass=BrowserSingletonMeta):
 
     def quit_driver(self):
         self.driver.quit()
-        self.driver = None
+        SingletonMeta._instances = {}

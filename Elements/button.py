@@ -2,5 +2,5 @@ from Elements.base_element import BaseElement
 
 
 class Button(BaseElement):
-    def __init__(self, locator):
-        super().__init__(locator)
+    def __init__(self, locator, name):
+        super().__init__(locator, name)

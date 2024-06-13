@@ -7,4 +7,3 @@ def browser():
     browser_instance = BrowserSingleton()
     yield browser_instance
     browser_instance.quit_driver()
-    browser_instance = None
