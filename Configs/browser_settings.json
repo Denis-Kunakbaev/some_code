@@ -1,0 +1,8 @@
+{
+   "browser": "Chrome",
+   "options": [
+      "--start-maximized",
+      "--lang=en-US"
+   ],
+   "URL": "https://demoqa.com/"
+}
