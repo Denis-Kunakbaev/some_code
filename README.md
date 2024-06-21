@@ -1,62 +1,83 @@
-# d.kunakbaev
-# Тестовый проект для сайта demoqa.com
+# Automated Tests for demoqa.com website
 
-Этот проект содержит набор автоматических тестов для сайта [demoqa.com](https://demoqa.com/).
+This project contains a set of automated tests for the [demoqa.com](https://demoqa.com/) website. Tests are written in Python using Selenium, PyTest, and webdriver-manager.
 
-## Функциональность
+## Functionality
 
-Проект включает в себя следующие тесты:
+The project includes the following tests:
 
-- Тестирование формы Web Tables:
-    - Добавление нового пользователя в таблицу.
-    - Проверка наличия пользователя в таблице.
-    - Удаление нового пользователя из таблицы.
-- Тестирование формы Browser Windows:
-    - Открытие новой вкладки.
-    - Переход на новую вкладку.
-    - Закрытие текущей вкладки.
-    - Переход на страницу "Links".
+- **Web Tables Form Testing:**
+    - Adding a new user to the table.
+    - Checking the presence of a user in the table.
+    - Deleting a new user from the table.
+- **Browser Windows Form Testing:**
+    - Opening a new tab.
+    - Switching to a new tab.
+    - Closing the current tab.
+    - Navigating to the "Links" page.
+    - Clicking the "Home" link.
+    - Switching to a new tab.
+    - Switching back to the original tab.
+- **Alerts Form Testing:**
+    - Opening alerts.
+    - Get text from alerts.
+    - Send text to alert.
+- **Frame Form Testing:**
+    - Opening frames form.
+    - Switching between frames.
 
-## Требования
+## Requirements
 
 - Python 3.x
 - Selenium
 - PyTest
 - webdriver-manager
 
-## Установка
+## Installation
 
-1. Клонируйте репозиторий:
-   ```bash
-   git clone https://github.com/Denis-Kunakbaev/some_code.git
+1. Clone the repository:
 
-Установите зависимости:
-pip install -r requirements.txt
+   git clone https://github.com/tquality-education-lvl1/d.kunakbaev.git
 
 
-Запуск тестов
-Запустите тесты с помощью pytest:
-pytest
+2. Install dependencies:
+    pip install -r requirements.txt
 
 
-Структура проекта
-├── Pages
-│   ├── main_page.py
-│   └── web_tables_form.py
-├── Forms
-│   ├── base_form.py
-│   └── web_tables_form.py
-├── Elements
-│   ├── tabs.py
-│   └── button.py
-└── tests
-    └── test_tables.py
+3. Running Tests
+    Run tests using pytest:
+    pytest --browser Chrome or pytest --browser Firefox
 
-Дополнительные сведения
-requirements.txt содержит список необходимых зависимостей.
-tests папка содержит тестовые файлы.
-Pages папка содержит файлы с описанием страниц.
-Elements папка содержит файлы с описанием веб-элементов.
-Forms папка содержит файлы с описанием форм.
-Автор
+## Project Structure
+    Root
+    ├── Elements
+    │   ├── alert.py
+    │   ├── base_element.py
+    │   ├── button.py
+    │   ├── frame.py
+    │   ├── table.py
+    │   ├── tabs.py
+    │   └── text_field.py
+    ├── Forms
+    │   ├── alerts_form.py
+    │   ├── base_form.py
+    │   ├── browser_form.py
+    │   ├── links_form.py
+    │   └── webtables_form.py
+    ├── Pages
+    │   ├── base_page.py
+    │   └── main_page.py
+    ├── Tests
+    │   ├── conftest.py
+    │   └── test_demoqa.py
+    └── Utils
+        ├── browser_factory.py
+        ├── json_helper.py
+        ├── logger.py
+        ├── singleton_driver.py
+        ├── singleton_meta.py
+        └── table_data_helper.py
+
+
+Author
 Denis-Kunakbaev

@@ -1,0 +1,32 @@
+{
+   "users": [
+     {
+       "firstName": "Cierra",
+       "lastName": "Vega",
+       "age": "39",
+       "userEmail": "cierra@example.com",
+       "salary": "10000",
+       "department": "Insurance"
+     },
+     {
+       "firstName": "Alden",
+       "lastName": "Cantrell",
+       "age": "45",
+       "userEmail": "alden@example.com",
+       "salary": "12000",
+       "department": "Compliance"
+     },
+     {
+       "firstName": "Kierra",
+       "lastName": "Gentry",
+       "age": "29",
+       "userEmail": "kierra@example.com",
+       "salary": "2000",
+       "department": "Legal"
+     }
+   ],
+   "frames": {
+     "parent_frame_text": "Parent frame",
+     "child_frame_text": "Child Iframe"
+   }
+ }

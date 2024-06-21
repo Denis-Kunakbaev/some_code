@@ -1,0 +1,8 @@
+   {
+   "options": [
+      "--start-maximized",
+      "--lang=en-US"
+   ],
+   "url": "https://demoqa.com/",
+   "waiting_time": 20
+   }
